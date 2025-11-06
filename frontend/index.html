@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project Board – Login</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="center">
+    <div class="card" style="width:420px;">
+      <div class="stack">
+        <div class="header"><h1 class="logo">Project Board</h1></div>
+        <div class="row" style="gap:10px; justify-content:center;">
+          <button id="tab-login" class="primary">Login</button>
+          <button id="tab-signup">Sign up</button>
+        </div>
+        <form id="login" class="stack">
+          <input type="email" id="login-email" placeholder="Email" required>
+          <input type="password" id="login-password" placeholder="Password" required>
+          <button class="primary" type="submit">Login</button>
+          <div class="small">No account? Click Sign up.</div>
+        </form>
+        <form id="signup" class="stack" style="display:none;">
+          <input type="text" id="signup-name" placeholder="Full name" required>
+          <input type="email" id="signup-email" placeholder="Email" required>
+          <input type="password" id="signup-password" placeholder="Password (min 6)" minlength="6" required>
+          <button class="primary" type="submit">Create account</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="/js/auth.js"></script>
+</body>
+</html>

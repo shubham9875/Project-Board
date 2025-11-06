@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Board – Project Board</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2 id="project-title">Board</h2>
+      <div>
+        <a class="link" href="/projects.html">All Projects</a>
+        <a class="link" href="/" id="logout" style="margin-left:12px;">Logout</a>
+      </div>
+    </div>
+
+    <div class="add-task">
+      <input id="task-title" placeholder="Quick add task to To Do">
+      <button class="primary" id="add-task-btn">Add</button>
+    </div>
+
+    <div class="board">
+      <div class="column" data-status="todo">
+        <h3>To Do</h3>
+        <div id="col-todo" class="col"></div>
+      </div>
+      <div class="column" data-status="inprogress">
+        <h3>In Progress</h3>
+        <div id="col-inprogress" class="col"></div>
+      </div>
+      <div class="column" data-status="done">
+        <h3>Done</h3>
+        <div id="col-done" class="col"></div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/board.js"></script>
+</body>
+</html>

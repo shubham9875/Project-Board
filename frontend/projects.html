@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Projects – Project Board</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Projects</h2>
+      <div>
+        <a class="link" href="#" id="me"></a>
+        <a class="link" href="/" id="logout" style="margin-left:12px;">Logout</a>
+      </div>
+    </div>
+    <div class="row" style="margin-bottom:12px;">
+      <input class="searchbar" id="search" placeholder="Search your projects">
+      <input id="new-name" placeholder="New project name">
+      <button class="primary" id="create">Create</button>
+    </div>
+    <div class="projects" id="projects"></div>
+  </div>
+  <script src="/js/projects.js"></script>
+</body>
+</html>
